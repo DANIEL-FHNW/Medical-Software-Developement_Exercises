@@ -1,8 +1,22 @@
+import gzip
 import csv
-from collections import Counter
 import hashlib
+import os
+import urllib.request
 
-filepath = "/Users/daniel/Desktop/FHNW/Medical SW Dev/gene_info"
+url = "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz"
+local_path = "gene_info.gz"
+
+#Download the file locally
+if not os.path.exists(local_path):
+    print("Downloading file... this may take a while.")
+    urllib.request.urlretrieve(url, local_path)
+
+
+def get_file_md5(fname):
+    hash
+
+filepath = "/https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz"
 
 #MD5-Value
 md5_hash = hashlib.md5(filepath.encode('utf-8')).hexdigest()
