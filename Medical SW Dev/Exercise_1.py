@@ -7,10 +7,11 @@ import urllib.request
 url = "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_info.gz"
 local_path = "gene_info.gz"
 
-# 1. Download
+#Download the file locally
 if not os.path.exists(local_path):
     print("Downloading file... this may take a while.")
     urllib.request.urlretrieve(url, local_path)
+
 
 def get_file_md5(fname):
     hash
