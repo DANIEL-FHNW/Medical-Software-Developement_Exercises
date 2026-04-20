@@ -39,7 +39,7 @@ Text: "RFI Response must have the ability to attach a binary file of 2 MB maximu
 | **Traceable** | ✅ Yes | Uniquely identified as FR19.4 and links to the RFI process. |
 | **Testable** | ✅ Yes | Can be verified with boundary value testing (1.9MB vs 2.1MB). |
 
-#6. Use Cases (Examples)
+#7. Use Cases (Examples)
 Login: Actors access the system using a User ID and Password.
 RFO/RFT Response: TP Administrators create and submit responses to training/testing requests.
 Publish Announcements: PMU Administrators post public event/program announcements to the home page.
