@@ -1,0 +1,7 @@
+{
+    "database_url": "pq.fhnw.ch",
+	"database_port": "5432",
+    "database_username": "dbusername_dev",
+	"database_password": "dbpassword_dev",
+	"log_level": "debug"
+}
