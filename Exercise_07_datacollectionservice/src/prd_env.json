@@ -1,0 +1,7 @@
+{
+    "database_url": "pqprd.fhnw.ch",
+	"database_port": "5432",
+    "database_username": "dbusername_prd",
+	"database_password": "dbpassword_prd",
+	"log_level": "info"
+}

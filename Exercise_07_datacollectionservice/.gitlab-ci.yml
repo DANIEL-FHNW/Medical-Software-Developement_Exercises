@@ -1,0 +1,34 @@
+image: python:3.10
+
+env:
+  stage: .pre
+  script:
+    - cd src
+    - pip install -r requirements.txt
+
+test:
+  stage: test
+  before_script:
+    - cd src
+    - pip install -r requirements.txt
+  script:
+    - python -m coverage run -m datastructure_test
+    - coverage html
+  artifacts:
+        paths:
+            - htmlcov/
+
+pages:
+    stage: deploy
+    dependencies:
+      - test
+    before_script:
+      - cd src
+      - pip install -r requirements.txt
+    script:
+      - python -m coverage run -m datastructure_test
+      - coverage html
+      - mv htmlcov/ ../public/
+    artifacts:
+        paths:
+            - public/
