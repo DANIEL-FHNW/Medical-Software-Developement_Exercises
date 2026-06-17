@@ -1,6 +1,0 @@
-TestIndex               Status, required fields, response time
-TestCreatePatient       200 on valid POST, fields in response, 400 on missing name
-TestGetPatient          200 for known ID, 404 for unknown ID, fields in response
-TestCreateExperiment    Same pattern as patientTestGetExperiment200 / 404TestUploadData200 on valid upload, 400 on missing fields
-TestStoreData           200 on trigger
-TestListEndpoints       /patients and /experiments return 200
